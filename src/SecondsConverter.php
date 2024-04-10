@@ -78,5 +78,3 @@ class SecondsConverter {
         return implode(', ', $output);
     }
 }
-
-?>
