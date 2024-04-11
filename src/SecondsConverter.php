@@ -12,6 +12,8 @@
  * @version  1.0.0
  */
 
+namespace ramazancetinkaya;
+
 class SecondsConverter {
     /**
      * Convert seconds to minutes.
