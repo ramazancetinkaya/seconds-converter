@@ -2,7 +2,7 @@
 /**
  * Seconds Converter
  *
- * A library to convert seconds into minutes, hours, and days.
+ * A library to convert seconds into minutes, hours, days, and weeks.
  *
  * @category Utility
  * @package  SecondsConverter
@@ -44,9 +44,19 @@ class SecondsConverter {
     public function toDays(int $seconds): float {
         return $seconds / 86400;
     }
+    
+    /**
+     * Convert seconds to weeks.
+     *
+     * @param int $seconds The number of seconds to convert.
+     * @return float The converted value in weeks.
+     */
+    public function toWeeks(int $seconds): float {
+        return $seconds / 604800;
+    }
 
     /**
-     * Convert seconds to a human-readable format (minutes, hours, days).
+     * Convert seconds to a human-readable format (minutes, hours, days, weeks).
      *
      * @param int $seconds The number of seconds to convert.
      * @return string The converted value with appropriate units.
@@ -63,6 +73,7 @@ class SecondsConverter {
 
         $output = [];
         $units = [
+            'week' => 604800,
             'day' => 86400,
             'hour' => 3600,
             'minute' => 60,
