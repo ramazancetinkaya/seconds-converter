@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/ramazancetinkaya/seconds-converter)](https://github.com/ramazancetinkaya/seconds-converter/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/ramazancetinkaya/seconds-converter)](https://github.com/ramazancetinkaya/seconds-converter/network)
 
-Seconds Converter is a PHP library designed to simplify the conversion of seconds into various time units such as minutes, hours, and days. It provides a convenient and easy-to-use interface for developers to integrate time conversion functionality into their projects.
+Seconds Converter is a PHP library designed to simplify the conversion of seconds into various time units such as minutes, hours, days, and weeks. It provides a convenient and easy-to-use interface for developers to integrate time conversion functionality into their projects.
 
 ## Table of Contents
 
@@ -53,7 +53,7 @@ use ramazancetinkaya\SecondsConverter;
 $converter = new SecondsConverter();
 
 try {
-    echo $converter->convert(123456); // Output: "1 days, 10 hours, 17 minutes, 36 seconds"
+    echo $converter->convert(999999); // Output: "1 weeks, 4 days, 13 hours, 46 minutes, 39 seconds"
 } catch (InvalidArgumentException $e) {
     echo "Error: " . $e->getMessage();
 }
