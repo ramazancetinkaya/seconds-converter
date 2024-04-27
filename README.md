@@ -53,7 +53,7 @@ use ramazancetinkaya\SecondsConverter;
 $converter = new SecondsConverter();
 
 try {
-    echo $converter->convert(999999); // Output: "1 weeks, 4 days, 13 hours, 46 minutes, 39 seconds"
+    echo $converter->convert(999999); // Output: "1 week, 4 days, 13 hours, 46 minutes, 39 seconds"
 } catch (InvalidArgumentException $e) {
     echo "Error: " . $e->getMessage();
 }
